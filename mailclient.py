@@ -19,7 +19,7 @@ sha256.update(decoded_password)
 decrypted_password = sha256.hexdigest()
 
 
-server.login('mail@example.com', decrypted_password) # instead of adding real password here, save as seperate encrytped file, import to a variable and use that here. 
+server.login('cagefighter69@preston.com', decrypted_password) # instead of adding real password here, save as seperate encrytped file, import to a variable and use that here. 
 
 msg = MIMEMultipart()
 msg['From'] = 'Kipland Dynamite'
@@ -40,3 +40,6 @@ p.set_payload(attachment.read())
 encoders.encode_base64(p)
 p.add_header('Content-Disposition', f'attachment'; filename={filename})
 msg.attach(p)
+
+text = msg.as_string()
+server.sendmail('cagefighter69@preston.com', 'lawfawnduh@gmail.com' )
