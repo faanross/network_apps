@@ -38,8 +38,8 @@ p = MIMEBase('application', 'octet-stream')
 p.set_payload(attachment.read())
 
 encoders.encode_base64(p)
-p.add_header('Content-Disposition', f'attachment'; filename={filename})
+p.add_header('Content-Disposition', f'attachment; filename={filename}')
 msg.attach(p)
 
 text = msg.as_string()
-server.sendmail('cagefighter69@preston.com', 'lawfawnduh@gmail.com' )
+server.sendmail('cagefighter69@preston.com', 'lawfawnduh@gmail.com', text)
