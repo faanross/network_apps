@@ -1,1 +1,2 @@
-#DDOS script 
+import threading
+import socket
