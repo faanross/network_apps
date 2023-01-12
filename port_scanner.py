@@ -1,4 +1,6 @@
+from queue import Queue
 import socket
+import threading
 
 target = '192.168.0.102'
 
