@@ -1,6 +1,18 @@
 from queue import Queue
 import socket
 import threading
+import sys
+
+if len(sys.argv) != 3:
+    print("Please provide valid CLA: python3 port_scanner.py <threads: 1-100> <mode: 1-3>")
+    sys.exit()
+
+threads = int(sys.argv[1])
+mode = int(sys.argv[2])
+
+if not (1 <= threads <= 100) or not (1 <= mode <= 3):
+    print("Please provide valid CLA: python3 port_scanner.py <threads: 1-100> <mode: 1-3>")
+    sys.exit()
 
 target = '192.168.0.102'
 queue = Queue()
@@ -14,6 +26,7 @@ def portscan(port):
     except:
         return False
 
+# different scanning modes
 def get_ports(mode):
     if mode == 1:
         for port in range(1, 1024):
@@ -57,4 +70,4 @@ def run_scanner(threads, mode):
 
     print("Open ports are:", open_ports)
 
-run_scanner(100, 1)
+run_scanner(threads, mode)
