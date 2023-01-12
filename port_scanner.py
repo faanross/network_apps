@@ -3,6 +3,8 @@ import socket
 import threading
 
 target = '192.168.0.102'
+queue = Queue()
+open_ports = []
 
 def portscan(port):
     try:
