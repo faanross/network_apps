@@ -24,3 +24,9 @@ def receive():
             print("An error occured!")
             client.close()
             break
+
+# Sending Messages To Server
+def write():
+    while True:
+        message = '{}: {}'.format(nickname, input(''))
+        client.send(message.encode('ascii'))
