@@ -1,4 +1,4 @@
-# tcp chat client
+# tcp chat client -> server script
 
 import socket
 import threading
