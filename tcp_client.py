@@ -1,6 +1,6 @@
 import socket
 
-target_host = "127.0.0.1"
+target_host = "192.168.0.102"
 target_port = 80
 
 # create a socket object
@@ -10,3 +10,4 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((target_host, target_port))
 
 # send some data once connected
+client.send(b"")
