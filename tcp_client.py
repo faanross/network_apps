@@ -10,4 +10,4 @@ client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client.connect((target_host, target_port))
 
 # send some data once connected
-client.send(b"GET / HTTP/1.1")
+client.send(b"GET / HTTP/1.1\r\n")
