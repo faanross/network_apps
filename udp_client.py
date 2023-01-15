@@ -12,3 +12,5 @@ client.sendto("This is a test.", target_host, target_port)
 
 # receive data
 data,addr = client.recv(4096)
+
+print(data)
