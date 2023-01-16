@@ -15,4 +15,9 @@ def execute(cmd):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
+        description='BHP Net Tool',
+        formatter_class=argparse.RawDescriptionHelpFormatter,
+        epilog=textwrap.dedent('''Example:
+            net
+
 
