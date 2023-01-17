@@ -45,7 +45,11 @@ class Netcat:
                             buffer = input('>')
                             buffer += '\n'
                             self.socket.send(buffer.encode())
-                            
+            except KeyboardInterrupt:
+                print('User terminated.')
+                self.socket.close()
+                
+
 
 
 
