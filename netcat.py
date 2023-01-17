@@ -40,6 +40,12 @@ class Netcat:
                         response += data.decode()
                         if recv_len < 4096:
                             break
+                        if response:
+                            print(response)
+                            buffer = input('>')
+                            buffer += '\n'
+                            self.socket.send(buffer.encode())
+                            
 
 
 
