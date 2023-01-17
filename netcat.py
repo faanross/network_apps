@@ -59,7 +59,9 @@ class Netcat:
             client_thread.start()
 
     def handle(self, client_socket):
-        
+        if self.args.execute:
+            output = execute(self.args.execute)
+            client_socket.send(output.encode())
 
 
 
