@@ -48,7 +48,14 @@ class Netcat:
             except KeyboardInterrupt:
                 print('User terminated.')
                 self.socket.close()
-                
+                sys.exit()
+
+    def listen(self):
+        self.socket.bind((self.args.target, self.args.port))
+        self.socket.listen(5)
+        while True:
+            client_socket, _ = self.socket.accept()
+
 
 
 
