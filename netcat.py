@@ -55,6 +55,7 @@ class Netcat:
         self.socket.listen(5)
         while True:
             client_socket, _ = self.socket.accept()
+            client_thread = threading.Thread(target=self.handle, args=(client_socket,))
 
 
 
