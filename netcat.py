@@ -31,7 +31,9 @@ class Netcat:
         if self.buffer:
             self.socket.send(self.buffer)
             try:
-                
+                while True:
+                    recv_len = 1
+                    response = ''
 
 
 
