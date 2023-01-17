@@ -13,7 +13,9 @@ def execute(cmd):
     output = subprocess.check_output(shlex.split(cmd), stderr=subprocess.STDOUT)
     return output.decode()
 
-
+class Netcat:
+    def __init__(self,args,buffer=None):
+        
 
 
 
