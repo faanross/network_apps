@@ -63,6 +63,16 @@ class Netcat:
             output = execute(self.args.execute)
             client_socket.send(output.encode())
 
+        elif self.args.upload:
+            file_buffer = b''
+            while True:
+                data = client_socket.recv(4096)
+                if data:
+                    file_buffer += data
+                    print(len(file_buffer))
+                else:
+                    break
+
 
 
 
