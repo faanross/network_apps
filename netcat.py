@@ -27,6 +27,7 @@ class Netcat:
             self.send()
 
     def send(self):
+        self.socket.connect((self.args.target, self.args.port))
         
 
 
