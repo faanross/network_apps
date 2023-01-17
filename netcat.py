@@ -29,7 +29,9 @@ class Netcat:
     def send(self):
         self.socket.connect((self.args.target, self.args.port))
         if self.buffer:
-            self.socket.send()
+            self.socket.send(self.buffer)
+            try:
+                
 
 
 
