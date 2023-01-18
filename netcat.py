@@ -92,14 +92,7 @@ class NetCat:
                 except Exception as e:
                     print(f'server killed {e}')
                     self.socket.close()
-
-
-
-
-
-
-
-
+                    sys.exit()
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
