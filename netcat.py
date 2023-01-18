@@ -90,6 +90,7 @@ class NetCat:
                         client_socket.send(response.encode())
                     cmd_buffer = b''
                 except Exception as e:
+                    print(f'server killed {e}')
 
 
 
