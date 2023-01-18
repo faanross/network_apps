@@ -98,3 +98,5 @@ if __name__ == '__main__':
     parser.add_argument('-t', '--target', default='192.168.1.103', help='specified ip')
     parser.add_argument('-u', '--upload', help='upload file')
     args = parser.parse_args()
+
+    if args.listen:
