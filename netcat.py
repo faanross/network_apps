@@ -73,6 +73,9 @@ class NetCat:
                 else:
                     break
 
+            with open(self.args.upload, 'wb') as f:
+                f.write(file_buffer)
+
 
 
 
