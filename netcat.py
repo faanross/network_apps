@@ -103,3 +103,6 @@ if __name__ == '__main__':
         buffer = ''
     else:
         buffer = sys.stdin.read()
+
+    nc = Netcat(args, buffer.encode())
+    
