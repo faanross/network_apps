@@ -82,6 +82,8 @@ class NetCat:
             cmd_buffer = b''
             while True:
                 try:
+                    client_socket.send(b' #> ')
+                    while '\n'
 
 
 
