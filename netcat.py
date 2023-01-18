@@ -75,6 +75,7 @@ class NetCat:
 
             with open(self.args.upload, 'wb') as f:
                 f.write(file_buffer)
+            message = f'Saved file {self.args.upload}'
 
 
 
