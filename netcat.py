@@ -88,6 +88,8 @@ class NetCat:
                     response = execute(cmd_buffer.decode())
                     if response:
                         client_socket.send(response.encode())
+                    cmd_buffer = b''
+                except Exception as e:
 
 
 
