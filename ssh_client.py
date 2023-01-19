@@ -1,3 +1,4 @@
 import paramiko
 
-def
+def ssh_command(ip, port, user, passwd, cmd):
+    
