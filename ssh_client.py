@@ -20,4 +20,4 @@ if __name__ == '__main__':
     ip = input('Enter server IP: ') or '192.168.2.94'
     port = input('Please enter port number or <CR>:') or 2222
     cmd = input('Enter command or <CR>:') or 'id'
-    ssh_command(ip, port, user, passwd, cmd)
+    ssh_command(ip, port, user, password, cmd)
