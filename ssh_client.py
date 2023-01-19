@@ -16,4 +16,7 @@ if __name___ == '__main__':
     import getpass
     user = input('Username: ')
     password = getpass.getpass()
-
+    
+    ip = input('Enter server IP: ') or '192.168.2.94'
+    port = input('Please enter port number') or 2222
+    cmd = 
