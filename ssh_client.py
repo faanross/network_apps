@@ -6,3 +6,8 @@ def ssh_command(ip, port, user, passwd, cmd):
     client.connect(ip, port=port, username=user, password=passwd)
 
     _, stdout, stderr = client.exec_command(cmd)
+    output = stdout.readlines() + stderr.readlines()
+    if output:
+        print('--- Output ---')
+        for line in output:
+            f
