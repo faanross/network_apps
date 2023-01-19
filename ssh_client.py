@@ -10,4 +10,10 @@ def ssh_command(ip, port, user, passwd, cmd):
     if output:
         print('--- Output ---')
         for line in output:
-            f
+            print(line.strip())
+
+if __name___ == '__main__':
+    import getpass
+    user = input('Username: ')
+    password = getpass.getpass()
+
