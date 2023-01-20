@@ -26,4 +26,7 @@ if __name__ == '__main__':
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+        sock.bind((server, ssh_port))
+        sock.listen(100)
+        print('[+] Listening for connection ...')
         
