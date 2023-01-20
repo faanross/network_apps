@@ -9,4 +9,9 @@ HOSTKEY = paramiko.RSAKey(filename=os.path.join(CWD, '.test_rsa.key'))
 
 class Server (paramiko.ServerInterface):
     def __init__(self):
-        
+        self.event = threading.Event()
+
+    def check_channel_request(self, kind, chanid):
+
+
+        return super().check_channel_request(kind, chanid)
