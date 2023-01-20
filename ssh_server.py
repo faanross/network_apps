@@ -29,4 +29,4 @@ if __name__ == '__main__':
         sock.bind((server, ssh_port))
         sock.listen(100)
         print('[+] Listening for connection ...')
-        
+        client, addr = sock.accept()
