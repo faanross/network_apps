@@ -21,4 +21,7 @@ class Server (paramiko.ServerInterface):
             return paramiko.AUTH_SUCCESSFUL
 
 if __name__ == '__main__':
-    
+    server = '192.168.2.94'
+    ssh_port = 2222
+    try:
+        sock - 
