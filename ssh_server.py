@@ -30,3 +30,5 @@ if __name__ == '__main__':
         sock.listen(100)
         print('[+] Listening for connection ...')
         client, addr = sock.accept()
+    except Exception as e:
+        print()
