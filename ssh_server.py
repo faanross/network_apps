@@ -40,4 +40,8 @@ if __name__ == '__main__':
         bhSession.add_server_key(HOSTKEY)
         server = Server()
         bhSession.start_server(server=server)
-        
+
+        chan = bhSession.accept(20)
+        if chan is None:
+            print('*** No channel.')
+            sys.exit(1)
