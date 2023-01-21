@@ -37,4 +37,5 @@ if __name__ == '__main__':
         print(f'[+] Got a connection! from {addr}')
 
         bhSession = paramiko.Transport(client)
-        
+        bhSession.add_server_key(HOSTKEY)
+        server = Server()
