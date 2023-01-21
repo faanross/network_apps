@@ -36,4 +36,5 @@ if __name__ == '__main__':
     else:
         print(f'[+] Got a connection! from {addr}')
 
-        bhSession = para
+        bhSession = paramiko.Transport(client)
+        
