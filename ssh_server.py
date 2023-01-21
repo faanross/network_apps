@@ -53,5 +53,9 @@ if __name__ == '__main__':
             while True:
                 command = input("Enter command:")
                 
+                
+                r = chan.recv(8192)
+                print(r.decode())
+            
 
         
