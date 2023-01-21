@@ -50,6 +50,7 @@ if __name__ == '__main__':
         print(chan.recv(1024).decode())
         chan.send('Welcome to bh_ssh')
         try:
-            
+            while True:
+                
 
         
