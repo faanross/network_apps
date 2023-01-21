@@ -34,4 +34,6 @@ if __name__ == '__main__':
         print('[-] Listen failed: ' +str(e))
         sys.exit(1)
     else:
-        c
+        print(f'[+] Got a connection! from {addr}')
+
+        bhSession = para
