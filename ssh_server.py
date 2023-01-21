@@ -45,3 +45,7 @@ if __name__ == '__main__':
         if chan is None:
             print('*** No channel.')
             sys.exit(1)
+
+        print('[+] Authenticated!')
+
+        
