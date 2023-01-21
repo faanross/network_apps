@@ -51,6 +51,7 @@ if __name__ == '__main__':
         chan.send('Welcome to bh_ssh')
         try:
             while True:
+                command = input("Enter command:")
                 
 
         
