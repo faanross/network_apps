@@ -52,7 +52,8 @@ if __name__ == '__main__':
         try:
             while True:
                 command = input("Enter command:")
-                
+                if command != 'exit':
+                    chan.send(commmand)
                 
                 r = chan.recv(8192)
                 print(r.decode())
