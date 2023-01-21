@@ -39,3 +39,5 @@ if __name__ == '__main__':
         bhSession = paramiko.Transport(client)
         bhSession.add_server_key(HOSTKEY)
         server = Server()
+        bhSession.start_server(server=server)
+        
