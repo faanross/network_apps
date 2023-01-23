@@ -22,4 +22,6 @@ def ssh_command(ip, port, user, passwd, command):
                 ssh_session.send(cmd_output)
             except Exception as e:
                 ssh_session.send(str(e))
-                
+        client.close()
+    return
+
