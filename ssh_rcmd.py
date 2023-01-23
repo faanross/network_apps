@@ -30,3 +30,6 @@ if __name__ == '__main__':
     # user = getpass.getuser()
     user = input('Enter username: ')
     password = getpass.getpass()
+
+    ip = input('Enter server IP: ')
+    port = input('Enter port: ')
