@@ -17,3 +17,6 @@ def main():
         sniffer.ioctl(socket.SIO_RCVALL, socket.SIO_RCVALL_ON)
 
     print(sniffer.recvfrom(65565))
+
+    if os.name == 'nt':
+        sniffer.ioctl(socket.SIO_RCVALL, socket.SIO_RCVALL_ON)
