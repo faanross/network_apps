@@ -20,3 +20,6 @@ def main():
 
     if os.name == 'nt':
         sniffer.ioctl(socket.SIO_RCVALL, socket.SIO_RCVALL_OFF)
+
+if __name__ == "__main__":
+    main()
