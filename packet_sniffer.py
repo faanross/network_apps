@@ -1,7 +1,7 @@
 import socket 
 import os
 
-HOST = '192.168.1.206'
+HOST = '192.168.1.206' # here insert IP of your host system
 
 def main():
     if os.name == 'nt':
