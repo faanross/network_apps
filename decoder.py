@@ -12,4 +12,5 @@ class IP:
         self.tos = header[1]
         self.len = header[2]
         self.id = header[3]
+        self.offset = header[4]
         
