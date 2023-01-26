@@ -14,8 +14,8 @@ class IP:
         self.id = header[3]
         self.offset = header[4]
 
-        self.tos = header[5]
-        self.len = header[6]
+        self.ttl = header[5]
+        self.protocol_num = header[6]
         self.id = header[7]
         self.offset = header[8]
         self.offset = header[9]
