@@ -16,7 +16,7 @@ class IP:
 
         self.ttl = header[5]
         self.protocol_num = header[6]
-        self.id = header[7]
-        self.offset = header[8]
-        self.offset = header[9]
+        self.sum = header[7]
+        self.src = header[8]
+        self.dst = header[9]
 
