@@ -10,3 +10,6 @@ class IP:
         self.ihl= header[0] & 0xF
 
         self.tos = header[1]
+        self.len = header[2]
+        self.id = header[3]
+        
