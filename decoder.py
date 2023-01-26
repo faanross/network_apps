@@ -5,4 +5,4 @@ import struct
 
 class IP:
     def __init__(self,buff=None):
-        header = struct.unpack('<BBHHH')
+        header = struct.unpack('<BBHHHBBH4s4s', buff)
