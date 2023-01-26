@@ -8,3 +8,5 @@ class IP:
         header = struct.unpack('<BBHHHBBH4s4s', buff)
         self.ver = header[0] >> 4
         self.ihl= header[0] & 0xF
+
+        self.tos = header[1]
