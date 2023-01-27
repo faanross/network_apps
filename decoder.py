@@ -21,5 +21,6 @@ class IP:
         self.dst = header[9]
 
         # human readable IP addresses
+        self.src_address = ipaddress.ip_address(self.src)
         
 
