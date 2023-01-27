@@ -19,5 +19,5 @@ class IP:
         self.sum = header[7]
         self.src = header[8]
         self.dst = header[9]
-        f
+        
 
