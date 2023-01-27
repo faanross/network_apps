@@ -1,7 +1,7 @@
 import ipaddress
 import os 
 import socket
-import struct
+import sys
 
 class IP:
     def __init__(self,buff=None):
