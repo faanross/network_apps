@@ -22,5 +22,8 @@ class IP:
 
         # human readable IP addresses
         self.src_address = ipaddress.ip_address(self.src)
+        self.dst_address = ipaddress.ip_address(self.dst)
+
+        # map protocol constants to their names
         
 
