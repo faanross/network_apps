@@ -53,7 +53,11 @@ def sniff(host):
 
 
     if os.name == 'nt':
-        sniffer.ioctl(socket.SIO_RCVALL, socket.)
+        sniffer.ioctl(socket.SIO_RCVALL, socket.RCVALL_ON)
+
+    try:
+        while True:
+            
 
         
 
