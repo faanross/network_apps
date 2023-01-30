@@ -57,7 +57,10 @@ def sniff(host):
 
     try:
         while True:
-            
+            raw_buffer = sniffer.recvform(65535)[0]
+            ip_header = IP(raw_buffer[0:20])
+
+        # contineu ep 13 3:30
 
         
 
