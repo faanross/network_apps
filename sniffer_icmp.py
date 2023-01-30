@@ -42,6 +42,7 @@ class ICMP:
         self.seq = header[4]
 
 def sniff(host):
-    
+    if os.name == 'nt':
+        
         
 
