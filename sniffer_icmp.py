@@ -33,6 +33,8 @@ class IP:
             self.protocol = str(self.protocol_num)
 
 class ICMP:
-    
+    def __init__(self, buff):
+        header = struct.unpack('<BBHHH', buff)
+        
         
 
