@@ -28,5 +28,11 @@ class IP:
         self.protocol_map = {1: "ICMP", 6: "TCP", 17: "UDP"}
         try:
             self.protocol = self.protocol_map[self.protocol_num]
+        except Exception as e:
+            print('%s No protocol for %s' % (e, self.protocol_num))
+            self.protocol = str(self.protocol_num)
+
+class ICMP:
+    
         
 
