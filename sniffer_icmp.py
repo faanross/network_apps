@@ -43,6 +43,7 @@ class ICMP:
 
 def sniff(host):
     if os.name == 'nt':
+        socket_protocol = socket.IPPROTO_IP
         
         
 
