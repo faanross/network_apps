@@ -4,4 +4,5 @@ def packet_callback(packet):
     if packet[TCP].payload:
         mypacket = str(packet[TCP].payload)
         if 'user' in mypacket.lower() or 'pass' in mypacket.lower():
+            print(f"[*] Destination: {packet[IP].dst}")
             
