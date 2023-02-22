@@ -12,3 +12,6 @@ def get_mac(targetip):
         return r[Ether].src
     return None
 
+class Arper():
+    def __init___(self, victim, gateway, interface='eth0'):
+        
