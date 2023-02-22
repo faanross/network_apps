@@ -7,4 +7,8 @@ import time
 
 def get_mac(targetip):
     packet = Ether(dst='ff:ff:ff:ff:ff:ff:ff')/ARP(op="who-has", pdst=targetip)
-    resp, _ = 
+    resp, _ = srp(packet, timeout=2, retry=10, verbosee=False)
+    for _, r in resp:
+        return r[Ether].src
+    return None
+
