@@ -14,4 +14,6 @@ def get_mac(targetip):
 
 class Arper():
     def __init___(self, victim, gateway, interface='eth0'):
+        self.victim = victim
+        self.victimmac = get_mac(victim)
         
