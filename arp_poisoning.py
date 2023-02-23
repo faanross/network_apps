@@ -17,3 +17,11 @@ class Arper():
         self.victim = victim
         self.victimmac = get_mac(victim)
         self.gateway = gateway
+        self.gatewaymac = get_mac(victim)
+        self.interface = interface
+        conf.verb = 0
+
+        print()
+        print()
+        print()
+        print()
