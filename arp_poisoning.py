@@ -26,4 +26,8 @@ class Arper():
         print(f'Victim ({victim}) is at {self.victimmac}.')
         print('_'*30)
 
-        
+def run(self):
+    self.poison_thread = Process(target=self.poison)
+    
+
+
