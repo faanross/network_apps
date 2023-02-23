@@ -21,7 +21,7 @@ class Arper():
         self.interface = interface
         conf.verb = 0
 
-        print()
+        print(f'Initialized {interface}:')
         print()
         print()
         print()
