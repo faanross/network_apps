@@ -24,4 +24,6 @@ class Arper():
         print(f'Initialized {interface}:')
         print(f'Gateway ({gateway}) is at {self.gatewaymac}.')
         print(f'Victim ({victim}) is at {self.victimmac}.')
-        print()
+        print('_'*30)
+
+        
