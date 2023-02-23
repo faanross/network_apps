@@ -17,3 +17,4 @@ class Arper():
         self.victim = victim
         self.victimmac = get_mac(victim)
         
+        #
