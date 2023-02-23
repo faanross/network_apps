@@ -22,6 +22,6 @@ class Arper():
         conf.verb = 0
 
         print(f'Initialized {interface}:')
-        print()
+        print(f'Gateway ({gateway}) is at {self.gatewaymac}.')
         print()
         print()
