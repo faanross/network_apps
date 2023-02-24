@@ -19,6 +19,7 @@ class Arper():
         self.gateway = gateway
         self.gatewaymac = get_mac(victim)
         self.interface = interface
+        conf.iface = interface
         conf.verb = 0
 
         print(f'Initialized {interface}:')
@@ -28,6 +29,5 @@ class Arper():
 
 def run(self):
     self.poison_thread = Process(target=self.poison)
-    
+    self.poison_thread.start()
 
-#
