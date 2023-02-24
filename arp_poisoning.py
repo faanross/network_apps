@@ -34,3 +34,7 @@ class Arper():
         self.sniff_thread = Process(target=self.sniff)
         self.sniff_thread.start()
 
+    def poison(self):
+        poison_victim = ARP()
+        poison_victim.op = 2
+
