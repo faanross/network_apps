@@ -52,6 +52,8 @@ class Arper():
         poison_gateway.pdst  = self.gateway
         poison_gateway.hwdst = self.gatewaymac
 
+        print(f'ip src: {poison_gateway.psrc}')
+
 
 
 
