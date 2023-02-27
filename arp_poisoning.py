@@ -63,11 +63,5 @@ class Arper():
             sys.stdout.write('.')
             sys.stdout.flush()
             try:
-                
 
-
-
-
-
-
-
+#
