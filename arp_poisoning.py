@@ -79,6 +79,9 @@ class Arper():
         wrpcap('arper.pcap', packets)
         print('Got the packets')
         self.restore()
+        self.poison_thread.terminate()
+        print('Finished')
+
         
 
 
