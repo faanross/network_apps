@@ -73,5 +73,9 @@ class Arper():
 
     def sniff(self, count=1000):
         time.sleep(5)
+        print(f'Sniffing {count} packets')
+        bpf_filter = "ip host %s" % victim
+        packets = sniff(ciount=count, filter=bpf_filter, iface=self.interface)
         
+
 
