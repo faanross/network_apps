@@ -82,6 +82,8 @@ class Arper():
         self.poison_thread.terminate()
         print('Finished')
 
+    def restore(self):
+        print('Restoring APR tables...')
         
 
 
