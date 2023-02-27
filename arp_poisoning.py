@@ -71,3 +71,7 @@ class Arper():
             else:
                 time.sleep(2)
 
+    def sniff(self, count=1000):
+        time.sleep(5)
+        
+
