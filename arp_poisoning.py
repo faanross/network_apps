@@ -63,5 +63,6 @@ class Arper():
             sys.stdout.write('.')
             sys.stdout.flush()
             try:
+                send(poison_victim)
+                send(poison_gateway)
 
-#
