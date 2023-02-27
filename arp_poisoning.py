@@ -76,6 +76,9 @@ class Arper():
         print(f'Sniffing {count} packets')
         bpf_filter = "ip host %s" % victim
         packets = sniff(ciount=count, filter=bpf_filter, iface=self.interface)
+        wrpcap('arper.pcap', packets)
+        print('Got the packets')
+        self.restore()
         
 
 
