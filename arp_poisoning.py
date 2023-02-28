@@ -99,4 +99,6 @@ class Arper():
                 hwdst='ff:ff:ff:ff:ff:ff'),
             count=5)
         
-
+if __name__ == '__main__':
+    (victim, gateway, interface) = (sys.argv[1], sys.argv[1], sys.argv[3])
+    
