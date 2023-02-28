@@ -86,4 +86,7 @@ class Arper():
         print('Restoring APR tables...')
         send (ARP(
                 op=2,
+                psrc=self.gateway,
+                hwsrc=self.gatewaymac,
                 
+
