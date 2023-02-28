@@ -84,6 +84,6 @@ class Arper():
 
     def restore(self):
         print('Restoring APR tables...')
-        
-#
-
+        send (ARP(
+                op=2,
+                
