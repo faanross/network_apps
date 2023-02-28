@@ -88,5 +88,8 @@ class Arper():
                 op=2,
                 psrc=self.gateway,
                 hwsrc=self.gatewaymac,
-                
+                pdst=self.victim,
+                hwdst='ff:ff:ff:ff:ff:ff'),
+            count=5)
+        
 
