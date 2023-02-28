@@ -91,5 +91,12 @@ class Arper():
                 pdst=self.victim,
                 hwdst='ff:ff:ff:ff:ff:ff'),
             count=5)
+        send (ARP(
+                op=2,
+                psrc=self.victim,
+                hwsrc=self.victimmac,
+                pdst=self.gateway,
+                hwdst='ff:ff:ff:ff:ff:ff'),
+            count=5)
         
 
