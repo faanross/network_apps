@@ -29,3 +29,4 @@ if __name__ == '__main__':
     pfile = os.path.join(PCAPS, 'pcap.pcap')
     recapper = Recapper(pfile)
     recapper.get_responses()
+    recapper.write('image')
