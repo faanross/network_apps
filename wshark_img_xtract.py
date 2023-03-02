@@ -16,3 +16,5 @@ def get_header(payload):
     except ValueError:
         sys.stdout.write('-')
         sys.stdout.flush()
+        return None
+    
