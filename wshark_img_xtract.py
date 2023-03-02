@@ -6,3 +6,5 @@ import sys
 import zlib
 
 OUTDIR = '/home/gitgud/Desktop/pictures/'
+PCAPS = '/home/gitgud/Downloads/'
+
