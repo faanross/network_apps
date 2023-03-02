@@ -4,3 +4,5 @@ import os
 import re
 import sys
 import zlib
+
+OUTDIR = '/home/gitgud/Desktop/pictures/'
