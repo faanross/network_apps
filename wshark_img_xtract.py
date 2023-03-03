@@ -17,5 +17,7 @@ def get_header(payload):
         sys.stdout.write('-')
         sys.stdout.flush()
         return None
-    #
+    return header
+
+def extract_content(Response, content_name='image'):
     
