@@ -22,4 +22,6 @@ def get_header(payload):
 def extract_content(Response, content_name='image'):
     content, content_type = None, None
     if content_name in Response.header['Content-type']:
+        content_type = Response.header['Content-type'].split('/')[1]
+        content = Response.payload[Response.payload.index(b'\r\n\r\n')+4:]
         
