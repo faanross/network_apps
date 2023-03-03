@@ -24,4 +24,7 @@ def extract_content(Response, content_name='image'):
     if content_name in Response.header['Content-type']:
         content_type = Response.header['Content-type'].split('/')[1]
         content = Response.payload[Response.payload.index(b'\r\n\r\n')+4:]
+
+        if 'Content-Encoding' in Response.header:
+            if Response.header['Content-Encoding'] == 'gzip'
         
