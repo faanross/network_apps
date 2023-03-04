@@ -24,6 +24,7 @@ def get_header(payload):
         return None
     return header
 
+
 def extract_content(Response, content_name='image'):
     content, content_type = None, None
     if content_name in Response.header['Content-type']:
@@ -31,5 +32,10 @@ def extract_content(Response, content_name='image'):
         content = Response.payload[Response.payload.index(b'\r\n\r\n')+4:]
 
         if 'Content-Encoding' in Response.header:
-            if Response.header['Content-Encoding'] == 'gzip'
+            if Response.header['Content-Encoding'] == 'gzip':
+                content = zlib.decompress(Response.payload, zlib.MAX_WBITES)
+            elif Response.header['Content-Encoding'] == 'deflate':
+                content = zlib.decompress(Response.payload)
+
+                
         
