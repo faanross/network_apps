@@ -46,3 +46,9 @@ class Recapper:
         self.sessions = pcap.sessions()
         self.responses = list()
         
+    def get_responses(self):
+        for session in self.sessions:
+            payload = b''
+            for packet in self.sessions[session]:
+                try:
+                    
