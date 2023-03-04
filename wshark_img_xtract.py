@@ -37,5 +37,12 @@ def extract_content(Response, content_name='image'):
             elif Response.header['Content-Encoding'] == 'deflate':
                 content = zlib.decompress(Response.payload)
 
-                
+    return content, content_type
+
+
+class Recapper:
+    def __init__(self, fname):
+        pcap = rdpcap(fname)
+        self.sessions = pcap.sessions()
+        self.responses = list()
         
