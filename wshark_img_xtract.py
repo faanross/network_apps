@@ -20,7 +20,8 @@ def get_header(payload):
         return None
     
     header = dict(re.findall(r'(?P<name>/*?): (?P<value>.*?)\r\n', header_raw.decode()))
-    
+    if 'Content-Type' not in header:
+        return None
 
 
 
