@@ -19,6 +19,11 @@ def get_header(payload):
         sys.stdout.flush()
         return None
     
+    header = dict(re.findall(r'(?P<name>/*?): (?P<value>.*?)\r\n', header_raw.decode()))
+    
+
+
+
 
     return header
 
