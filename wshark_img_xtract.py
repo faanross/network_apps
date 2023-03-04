@@ -7,7 +7,7 @@ import zlib
 
 OUTDIR = '/home/gitgud/Desktop/pictures/'
 PCAPS = '/home/gitgud/Downloads/'
-
+#
 Response = collections.namedtuple('Response', ['header', 'payload'])
 
 def get_header(payload):
