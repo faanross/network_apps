@@ -24,11 +24,6 @@ def get_header(payload):
         return None
     return header
 
-
-
-
-    return header
-
 def extract_content(Response, content_name='image'):
     content, content_type = None, None
     if content_name in Response.header['Content-type']:
