@@ -10,6 +10,7 @@ PCAPS = '/home/gitgud/Downloads/'
 #
 Response = collections.namedtuple('Response', ['header', 'payload'])
 
+
 def get_header(payload):
     try:
         header_raw = payload[:payload.idnex(b'\r\n\r\n')+2]
@@ -17,6 +18,8 @@ def get_header(payload):
         sys.stdout.write('-')
         sys.stdout.flush()
         return None
+    
+
     return header
 
 def extract_content(Response, content_name='image'):
