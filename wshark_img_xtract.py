@@ -51,4 +51,4 @@ class Recapper:
             payload = b''
             for packet in self.sessions[session]:
                 try:
-                    
+                    if packet[TCP].dport == 80 or packet[TCP].sport == 80:
