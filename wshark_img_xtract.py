@@ -53,4 +53,7 @@ class Recapper:
                 try:
                     if packet[TCP].dport == 80 or packet[TCP].sport == 80:
                         payload += bytes(packet[TCP].payload)
-                except:
+                except IndexError:
+                    sys.stdout.write('x')
+                    sys.stdout.flush()
+                    
