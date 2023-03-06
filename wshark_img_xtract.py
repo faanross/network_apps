@@ -56,4 +56,5 @@ class Recapper:
                 except IndexError:
                     sys.stdout.write('x')
                     sys.stdout.flush()
-                    
+
+            if payload: 
