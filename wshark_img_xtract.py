@@ -52,3 +52,5 @@ class Recapper:
             for packet in self.sessions[session]:
                 try:
                     if packet[TCP].dport == 80 or packet[TCP].sport == 80:
+                        payload += bytes(packet[TCP].payload)
+                except:
