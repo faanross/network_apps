@@ -66,3 +66,5 @@ class Recapper:
     def write(self, content_name):
         for i, response in enumerate(self.responses):
             content, content_type = extract_content(response, content_name)
+            if content and content_type:
+                
