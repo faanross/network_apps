@@ -58,3 +58,5 @@ class Recapper:
                     sys.stdout.flush()
 
             if payload: 
+                header = get_header(payload)
+                if header is None:
