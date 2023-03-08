@@ -60,3 +60,5 @@ class Recapper:
             if payload: 
                 header = get_header(payload)
                 if header is None:
+                    continue
+                self.responses.append(Response(header=header, payload=payload))
